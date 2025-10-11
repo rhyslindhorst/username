@@ -1,20 +1,18 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Rhys Lindhorst
+- **Course:** CPSC 298 Computer Science Colloquium
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** 10/11/2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
-
+This script give the peramiters a username should follow before asking the username to input their own. The script then takes the inputed username from the user and tests and compares that input to the peramiters. The script then prints whether the given username is valid, meaning it passes the peramiters, or the given username is invalid, meaning it did not pass the peramiters.
 ## Username Requirements
 This script validates usernames according to the following rules:
 - Must start with a lowercase letter
 - Can only contain lowercase letters, digits, and underscores
 - Must be between 3 and 12 characters in length (inclusive)
-
 ## Usage
 To run the script interactively:
 ```bash
@@ -25,14 +23,8 @@ To test with the provided input file:
 ```bash
 ./username.sh < username-input
 ```
-
 ## How the Script Works
-[Explain in 3-5 sentences how your script validates usernames. Include information about:]
-- The use of the `while` loop
-- The `grep` command with extended regular expressions
-- The meaning of the `-E` and `-v` flags
-- The redirect `> /dev/null 2>&1`
-
+The script uses a while loop to continuously ask the user to input a username until valid. The script uses the grep command to test if the given username matches the regular expression given by peramiters. I did not use -E and -v for this task and I did not need to redirect to dev/nul.
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
 ```
@@ -42,18 +34,11 @@ This pattern ensures that:
 - The username starts with a lowercase letter `[a-z]`
 - The following characters are lowercase letters, digits, or underscores `[a-z0-9_]`
 - The total length is between 3 and 12 characters
-
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid usernames you tested (at least two)
-- Example invalid usernames and why they fail (at least two)
-- How you used the username-input file to test
-
+To test this script I used two valid usernames: rhyslind12, and sub12way_. I additionally used two invalid usernames: rl, and 12345sixseven. I redirected the standard input to the username-input file and ran the code with the exit commented out for testing.
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
-
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
-
+For this task, I had help from my father, ChatGPT.
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.

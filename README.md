@@ -24,7 +24,7 @@ To test with the provided input file:
 ./username.sh < username-input
 ```
 ## How the Script Works
-The script uses a while loop to continuously ask the user to input a username until valid. The script uses the grep command to test if the given username matches the regular expression given by peramiters. I did not use -E and -v for this task and I did not need to redirect to dev/nul.
+The script uses a while loop to continuously ask the user to input a username until valid. The script uses the grep command to test if the given username matches the regular expression given by peramiters. I used -E for extended regular expressions and -q to match the pattern instead of redirecting output to /dev/null.
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
 ```

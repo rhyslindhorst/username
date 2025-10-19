@@ -1,5 +1,4 @@
 #!/bin/bash
-# username.sh — validate each line of a file containing usernames.
 
 echo "Please enter a username that contains: only lower case letters, digits, and underscore characters. It should start with a lowercase letter and be longer than three characters but no more than twelve."
 
